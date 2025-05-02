@@ -1,5 +1,8 @@
 <h3>Todos List</h3>
-<p *ngIf="!todoItems().length">Loading...</p>
+
+@if (!todoItems().length) {
+  <p>Loading...</p>
+}
 <ul class="todos">
   @for (todo of todoItems(); track todo.id) {
   <li class="todos__item">

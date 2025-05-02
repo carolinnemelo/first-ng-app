@@ -1,11 +1,10 @@
 import { Component, inject, OnInit, signal, Signal } from '@angular/core';
 import { TodosService } from '../services/todos.service';
 import { Todo } from '../model/todo.type';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-todos',
-  imports: [NgIf],
+  imports: [],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss',
 })
